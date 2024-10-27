@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.model-metabox .form-group {
+  margin: 0 -8px 16px;
+  width: calc(100% + 16px);
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.model-metabox  .group {
+  width: 100%;
+  padding: 0 8px;
+  display: block;
+}
+
+.model-metabox .form-group.two-col .group {
+  width: 50%;
+}
+
+.model-metabox .form-group.three-col .group {
+  width: 33.33%;
+}
+
+.model-metabox label {
+  font-weight: 700;
+  width: 100%;
+  display: block;
+  margin: 0 0 5px;
+}
+
+.model-metabox textarea {
+  width: calc(66.66% - 8px);
+}
+
+.model-metabox input,
+.model-metabox select {
+  width: 100%;
+}
+.model-metabox .form-group .aw_upload_image_button{
+  margin-bottom: 10px;
+}

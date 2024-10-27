@@ -1,0 +1,256 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header:not(.entry-header):not(.site-header) {
+  padding: 15px;
+  font-size: 20px;
+  color: #df1660;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.container-fluid {
+  background-color: #f2f2f2;
+  margin-top: 4%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.col-sm-4 {
+  margin-top: 20px;
+}
+
+model-viewer {
+  width: auto;
+  background: #a9a9a9;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: arial;
+}
+
+.model-info {
+  background-color: white;
+  padding: 8px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.model-info h5,
+.model-info h6 {
+  margin: 10px 0 !important;
+}
+
+
+.modal-header {
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+}
+
+.modal-body {
+  overflow-y: auto;
+  min-height: 450px;
+  padding: 15px 25px !important;
+}
+
+
+.modal-body input.largerCheckbox {
+  padding: 0 !important;
+}
+
+.modal-body input[type="checkbox"]:checked::before {
+  left: 2px;
+  top: -2px;
+}
+
+
+input[type=checkbox]:after {
+  left: 3px;
+  top: -1px;
+  transform: rotate(45deg);
+}
+
+@media (max-width:600px) {
+  .modal-body input[type="checkbox"]:checked::before {
+    top: 3px;
+  }
+}
+
+.right-content {
+  overflow: hidden;
+  padding: 3%;
+  height: auto;
+}
+
+.separator {
+  border-left: 1px solid #e7e7e7;
+  height: 400px;
+}
+
+.title {
+  font-size: 30px;
+  color: #df1660;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.font-color {
+  color: #df1660;
+  font-weight: 700;
+}
+
+.controls {
+  padding: 10px 10px 10px 21px;
+}
+
+.controls p {
+  margin: -1px 7px 1px 0px;
+  color: #999;
+  font-size: 20px;
+}
+
+.controls span {
+  color: #999;
+  font-size: 20px;
+  padding-top: 2px;
+  padding-right: 10px;
+}
+
+
+.controls .btn-default {
+  color: #333 !important;
+  background-color: #fff !important;
+  border-color: #ccc !important;
+}
+
+.controls .btn-default:hover {
+  color: #333 !important;
+  background-color: #e6e6e6 !important;
+  border-color: #adadad !important;
+}
+
+
+.controls .btn.focus,
+.controls .btn:focus,
+.controls .btn:hover {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+
+.controls .btn.active.focus,
+.controls .btn.active:focus,
+.controls .btn.focus,
+.controls .btn:active.focus,
+.controls .btn:active:focus,
+.controls .btn:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  box-shadow: none !important;
+}
+
+
+.controls .btn-default:active,
+.controls .btn-default.active {
+  color: #333 !important;
+  background-color: #e6e6e6 !important;
+  background-image: none !important;
+  border-color: #adadad !important;
+}
+
+input.largerCheckbox {
+  margin-left: 5px !important;
+  padding-top: 10px !important;
+  width: 20px;
+  height: 20px;
+}
+
+.right-content span {
+  margin-right: 7px;
+  color: #999;
+  font-size: 21px;
+}
+
+.right-content p {
+  margin-top: 5px;
+  margin-right: 7px !important;
+  color: #999;
+  font-size: 17px;
+}
+
+.model {
+  position: fixed;
+  display: none;
+  width: 80%;
+  height: 80%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  left: 50%;
+  right: 0;
+  background: white;
+  z-index: 2;
+}
+
+.model.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container-fluid.blur {
+  filter: blur(5px);
+}
+
+.modal-title {
+  font-size: 24px;
+  padding-top: 9px;
+  margin: 0 !important;
+}
+
+.glyphicon {
+  position: relative;
+  padding-bottom: 10px;
+  z-index: 1;
+  color: white;
+  font-size: 40px;
+}
+
+.closeIcon {
+  float: right;
+  color: black;
+  margin-right: 30px;
+}
+
+
+.modal-content {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.modal-header .closeIcon {
+  line-height: 40px;
+}
+
+@media (min-height: 500px) {
+  .modal-body {
+    height: 500px;
+    margin-bottom: 10px;
+  }
+
+  .model {
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  .separator {
+    border-left: 0px;
+  }
+}
